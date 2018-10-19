@@ -13,4 +13,4 @@ Host someiternalhost
 hostname 10.132.0.3
 port 22
 user NetEng
-ProxyCommand ssh Radio@35.207.138.155 nc %h %p
+ProxyCommand ssh NetEng@35.241.145.116 nc %h %p
