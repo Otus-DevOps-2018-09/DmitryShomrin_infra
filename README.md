@@ -5,6 +5,9 @@ DmitryShomrin Infra repository
 bastion_IP = 35.241.145.116
 someinternalhost_IP = 10.132.0.3
 
+testapp_IP = 35.240.4.85
+testapp_port = 9292
+
 Подключение в одну команду:
 ssh -o ProxyCommand="ssh NetEng@35.241.145.116 nc %h %p" NetEng@10.132.0.3
 
