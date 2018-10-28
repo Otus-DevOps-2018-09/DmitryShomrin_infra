@@ -47,3 +47,8 @@ gcloud compute firewall-rules create default-puma-server \
   --source-ranges 0.0.0.0/0 \
   --target-tags puma-server
 ```
+***
+Homework #5
+Рассмотрены 2 подхода: Fry и Bake
+ubuntu16.json - Fry
+immutable.json - Bake
