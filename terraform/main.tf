@@ -5,10 +5,11 @@ provider "google" {
 }
 
 resource "google_compute_instance" "app" {
-  name         = "reddit-app"
+  name         = "reddit-app${count.index}"
   machine_type = "g1-small"
   zone         = "${var.zone}"
   tags         = ["reddit-app"]
+  count        = "${var.app_count}"
 
   # определение загрузочного диска
   boot_disk {
@@ -64,4 +65,14 @@ resource "google_compute_firewall" "firewall_puma" {
 
   # Правило применимо для инстансов с перечисленными тэгами
   target_tags = ["reddit-app"]
+}
+
+resource "google_compute_project_metadata" "app" {
+  metadata {
+    ssh-keys = <<EOF
+   appuser:${file(var.public_key_path)}
+   appuser1:${file(var.public_key_path)}
+   appuser2:${file(var.public_key_path)}
+   EOF
+  }
 }
