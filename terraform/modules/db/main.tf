@@ -15,7 +15,7 @@ resource "google_compute_instance" "db" {
  metadata {
    ssh-keys = "appuser:${file(var.public_key_path)}"
   }
-  connection {
+  /*connection {
     type        = "ssh"
     user        = "appuser"
     agent       = false
@@ -26,7 +26,7 @@ resource "google_compute_instance" "db" {
     inline = [
       "sudo -- sh -c 'sed -i 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf && systemctl restart mongod'"
     ]
-  }
+  }*/
  }
  resource "google_compute_firewall" "firewall_mongo" {
  name = "allow-mongo-default"
