@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/DmitryShomrin_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-09/DmitryShomrin_infra)
 # DmitryShomrin_infra
 DmitryShomrin Infra repository
 ***
@@ -106,3 +107,9 @@ Ansible-1
    - Настроено проксирование http трафика к приложению
    - Добавлены пользователи с помощью playbook'а
    - Зашифрованы файлы с паролями и именами пользователей
+
+   Задание со **
+   - packer validate для всех шаблонов
+   - terraform validate и tflint для окружений stage и prod
+   - ansible-lint для плейбуков Ansible
+   - в README.md добавлен бейдж с статусом билда
