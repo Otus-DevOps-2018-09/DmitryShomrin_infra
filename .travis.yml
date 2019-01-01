@@ -4,9 +4,6 @@ language: bash
 before_install:
 - curl https://raw.githubusercontent.com/express42/otus-homeworks/2018-09/run.sh |
   bash
-before_script:
-  - bash play-travis/inst.sh
-  - bash play-travis/test.sh
   notifications:
   slack:
     rooms:
