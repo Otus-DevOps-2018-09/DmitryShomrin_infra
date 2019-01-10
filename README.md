@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/DmitryShomrin_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-09/DmitryShomrin_infra)
 # DmitryShomrin_infra
 DmitryShomrin Infra repository
 ***
@@ -96,3 +97,19 @@ Ansible-1
   - Написал playbook с несколькими task
   - Разбил один playbook на три: app.yml, db.yml, deploy.yml
   - Изменил provisioners в packer и пересобрал образы
+
+  ***
+  Homework #10
+  Ansible-3
+  Выполнено:
+   - Написаны роли для развертывания приложения и бд
+   - Использована роль из Ansible galaxy
+   - Настроено проксирование http трафика к приложению
+   - Добавлены пользователи с помощью playbook'а
+   - Зашифрованы файлы с паролями и именами пользователей
+
+   Задание со **
+   - packer validate для всех шаблонов
+   - terraform validate и tflint для окружений stage и prod
+   - ansible-lint для плейбуков Ansible
+   - в README.md добавлен бейдж с статусом билда
