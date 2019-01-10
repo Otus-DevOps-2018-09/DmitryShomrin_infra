@@ -113,3 +113,16 @@ Ansible-1
    - terraform validate и tflint для окружений stage и prod
    - ansible-lint для плейбуков Ansible
    - в README.md добавлен бейдж с статусом билда
+
+  ***
+  Homework #11
+  Ansible-4
+  Выполнено:
+   - Установлен VirtualBox и Vagrant
+   - Написан Vagrantfile
+   - Развернуто локальное окружение
+   - При помощи Molecule протестирована роль db
+   - Переделаны packer_app.yml и packer_db.yml под запуск ролей app и db
+  
+  Задание со *:
+   - Настроено проксирование приложения с помощью nginx
